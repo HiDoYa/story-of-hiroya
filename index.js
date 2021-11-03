@@ -1569,7 +1569,7 @@ function setup() {
   createCanvas(400, 400);
   angleMode(DEGREES);
 
-  scene = 1;
+  scene = 0;
 
   hgCharacter = loadImage("images/CharacterBoy.png")
   wgCharacter = loadImage("images/CharacterPinkGirl.png")
@@ -1696,5 +1696,21 @@ function setup() {
 }
 
 function draw() {
-  scene14()
+  switch (scene) {
+    case 0: scene0(); break;
+    case 1: scene1(); break;
+    case 2: scene2(); break;
+    case 3: scene3(); break;
+    case 4: scene4(); break;
+    case 5: scene5(); break;
+    case 6: scene6(); break;
+    case 7: scene7(); break;
+    case 8: scene8(); break;
+    case 9: scene9(); break;
+    case 10: scene10(); break;
+    case 11: scene11(); break;
+    case 12: scene12(); break;
+    case 13: scene13(); break;
+    case 14: scene14(); break;
+  }
 }
