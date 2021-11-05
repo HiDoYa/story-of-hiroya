@@ -1,0 +1,20 @@
+h1 {
+    margin: 0.5em;
+    text-align: center;
+}
+
+div {
+    margin: 1em;
+    font-size: 1.2em;
+    margin-left: 9em;
+    margin-right: 9em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    margin: 1em;
+}
