@@ -5,9 +5,8 @@ h1 {
 
 div {
     margin: 1em;
+    text-align: center;
     font-size: 1.2em;
-    margin-left: 9em;
-    margin-right: 9em;
 }
 
 main {
