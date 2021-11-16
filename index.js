@@ -539,70 +539,68 @@ let scene7 = function () {
 };
 
 let scene8 = function () {
-  draw = function () {
-    background(57, 19, 145);
+  background(57, 19, 145);
 
-    // House
-    fill(166, 116, 116);
-    rect(77, 100, 300, 200);
-    fill(204, 161, 161);
-    rect(33, 150, 44, 150);
-    fill(171, 137, 137);
-    rect(43, 157, 34, 142);
-    fill(0, 0, 0);
+  // House
+  fill(166, 116, 116);
+  rect(77, 100, 300, 200);
+  fill(204, 161, 161);
+  rect(33, 150, 44, 150);
+  fill(171, 137, 137);
+  rect(43, 157, 34, 142);
+  fill(0, 0, 0);
 
-    // Stairs
-    rect(44, 181, 33, 3);
-    rect(44, 194, 33, 3);
-    rect(44, 208, 33, 3);
-    rect(44, 220, 33, 3);
-    rect(44, 236, 33, 3);
-    rect(44, 250, 33, 3);
-    rect(44, 264, 33, 3);
-    rect(44, 278, 33, 3);
-    rect(44, 292, 33, 3);
+  // Stairs
+  rect(44, 181, 33, 3);
+  rect(44, 194, 33, 3);
+  rect(44, 208, 33, 3);
+  rect(44, 220, 33, 3);
+  rect(44, 236, 33, 3);
+  rect(44, 250, 33, 3);
+  rect(44, 264, 33, 3);
+  rect(44, 278, 33, 3);
+  rect(44, 292, 33, 3);
 
-    // Garage
-    rect(120, 216, 219, 85);
-    fill(255, 255, 255);
-    rect(130, 226, 199, 75);
-    fill(0, 0, 0);
-    rect(125, 222, 121, 3);
-    rect(125, 236, 206, 3);
-    rect(125, 250, 206, 3);
-    rect(125, 264, 206, 3);
-    rect(125, 278, 206, 3);
-    rect(125, 292, 206, 3);
+  // Garage
+  rect(120, 216, 219, 85);
+  fill(255, 255, 255);
+  rect(130, 226, 199, 75);
+  fill(0, 0, 0);
+  rect(125, 222, 121, 3);
+  rect(125, 236, 206, 3);
+  rect(125, 250, 206, 3);
+  rect(125, 264, 206, 3);
+  rect(125, 278, 206, 3);
+  rect(125, 292, 206, 3);
 
-    // Windows
-    fill(0, 0, 0);
-    rect(108, 140, 99, 34);
-    rect(242, 140, 120, 34);
-    fill(163, 163, 163);
-    rect(118, 145, 79, 24);
-    rect(252, 145, 100, 24);
+  // Windows
+  fill(0, 0, 0);
+  rect(108, 140, 99, 34);
+  rect(242, 140, 120, 34);
+  fill(163, 163, 163);
+  rect(118, 145, 79, 24);
+  rect(252, 145, 100, 24);
 
-    // Streets
-    rect(0, 299, 400, 200);
+  // Streets
+  rect(0, 299, 400, 200);
 
-    // Fire
-    push();
-    scale(0.5, 0.5);
-    fire(216, scene8Vars.firePos + 153, 16, -100);
-    fire(538, scene8Vars.firePos + 114, -1, 291);
-    fire(136, scene8Vars.firePos + 325, 16, -100);
-    fire(644, scene8Vars.firePos + 304, 16, -100);
-    scene8Vars.firePos += setFireJump(scene8Vars.firePos)
-    pop();
+  // Fire
+  push();
+  scale(0.5, 0.5);
+  fire(216, scene8Vars.firePos + 153, 16, -100);
+  fire(538, scene8Vars.firePos + 114, -1, 291);
+  fire(136, scene8Vars.firePos + 325, 16, -100);
+  fire(644, scene8Vars.firePos + 304, 16, -100);
+  scene8Vars.firePos += setFireJump(scene8Vars.firePos)
+  pop();
 
-    image(hgCharacter, scene8Vars.charPos, 150, 167, 285);
+  image(hgCharacter, scene8Vars.charPos, 150, 167, 285);
 
-    if (scene8Vars.charPos > 150) {
-      button();
-    } else {
-      scene8Vars.charPos += 6;
-    }
-  };
+  if (scene8Vars.charPos > 150) {
+    button();
+  } else {
+    scene8Vars.charPos += 6;
+  }
 };
 
 let scene9 = function () {
@@ -1696,6 +1694,7 @@ function setup() {
 }
 
 function draw() {
+  mousePressed = function () { }
   switch (scene) {
     case 0: scene0(); break;
     case 1: scene1(); break;
